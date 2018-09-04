@@ -1,4 +1,21 @@
 .icon_button {
 	margin: 2%;
+	transition: transform 0.2s;
 }
 
+.icon_button:hover, .navbar-item:hover {
+	transform: scale(1.1);
+}
+
+.shadowed {
+	box-shadow: 0.1rem 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+	transition: transform 0.2s;
+}
+
+.shadowed:hover{
+	transform: scale(1.05);
+}
+
+li {
+	padding: 1%;
+}
