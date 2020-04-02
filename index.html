@@ -1,215 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Dan Keefe - Developer & Educator</title>
+		<link rel='shortcut icon' type='image/x-icon' href='assets/images/octo.ico' /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69267688-5"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		<!-- Stylesheets -->
 
-	  gtag('config', 'UA-69267688-5');
-	</script>
+		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/style.css">
 
-	<meta charset="UTF-8">
-	<title>Dan Keefe</title>
-	<link rel='shortcut icon' type='image/x-icon' href='assets/octo.ico' /> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-	<link rel="stylesheet" href="css/style.css">  
-</head>
+		<!-- Scripts -->
 
-<body class="has-background-light">
-	<section class="hero is-dark is-bold is-small">
-		<div class="hero-body">
-			<h1 class="title is-1">Dan Keefe</h1>
-			<p class="subtitle is-4">Interested in words and code and learning.</p>
-			<nav class="navbar-brand">
-				<a class="navbar-item" href="#about">About</a>
-				<a class="navbar-item" href="#skills">Skills</a>
-				<a class="navbar-item" href="#certificates">Certificates</a>
-				<a class="navbar-item" href="#projects">Projects</a>
-			</nav>
-		</div>
-	</section>
-	<section class="section box">
-		<a id="about"></a>
-		<h2 class="title is-4">About</h2>
-		<p>I'm a self-taught programmer with a background in education. I started programming out of curiosity, and 
-		found that I really enjoyed creating and experimenting with code. I started teaching Computer Science when I felt confident enough
-		and now I'm looking for new challenges.</p> 
-		<br />
-		<p>I'm fascinated by language, education, technology, and the intersection of the three. 
-		My major motivator is curiosity - I thrive on learning new things and working out better ways to do old ones.</p>
-	</section>
-	
-	<section class="section box">
-		<a id="skills"></a>
-		<h2 class="title is-4">Skills</h2>
-		<p>I'm familiar with a range of technologies, particularly Python and Javascript. I'm comfortable with modern HTML & CSS, as well as with node and various frameworks such as React. I've used SQL and VB.NET, and I've dabbled in a few other languages.</p>
-		<br/>
-		<p>I like to always be learning and building something new, and I try to contribute to open source projects when I can. I've just started learning C# and Unity.</p>
-	</section>
-	
-	<section class="section box">
-		<a id="certificates"></a>
-		<h2 class="title is-4">Certificates</h2>
-		<ul>
-			<li><a href="https://www.freecodecamp.org/certification/dkeefe/full-stack" target="blank">Full Stack Development - FreeCodeCamp (2018)</a></li>
-			<li><a href="https://www.freecodecamp.org/certification/dkeefe/legacy-front-end" target="blank">Front-end Development - FreeCodeCamp (2018)</a></li>
-		</ul>
-	</section>
-	
-	
-	<section class="section box">
-		<a id="projects"></a>
-		<h2 class="title is-4">Projects</h2>
-		<div class="tile is-ancestor">
-			<div class="tile is-parent is-4">
-				<article class="tile is-child box shadowed has-background-white-ter">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-header-title">Dragon Match</h3>
-						</div>
-						<figure class="image is-4by3">
-							<img src="assets/dragon-match.png" alt="Placeholder image">
-						</figure>
-						<div class="card-content">
-						<p class="subtitle is-5">A matching-pairs card game</p>
-						<p>I built this to practice using React and SVGs.</p>
-						</div>
-						<div class="card-footer">
-							<a class="card-footer-item" href="https://github.com/peritract/dragon-match" target="blank">Code</a>
-							<a class="card-footer-item" href="https://peritract.github.io/dragon-match" target="blank">Live Demo</a>
-						</div>
-					</div>
-				</article>
+		<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html" class="nav-link">Main</a>
+			<a href="about.html" class="nav-link">About</a>
+			<a href="projects.html" class="nav-link">Projects</a>
+			<a href="articles.html" class="nav-link">Articles</a>
+		</nav>
+		<section>
+			<div class="header-content">
+				<img src="assets/images/octo.png" class="header-img">
+				<h1 class="header-name">Dan Keefe</h1>
+				<h2 class="header-tagline">Developer & Educator</h2>
 			</div>
-			
-			<div class="tile is-parent is-4">
-				<article class="tile is-child box shadowed has-background-white-ter">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-header-title">Sorting Visualisations</h3>
-						</div>
-						<figure class="image is-4by3">
-							<img src="assets/sorting-visualisations.png" alt="Placeholder image">
-						</figure>
-						<div class="card-content">
-						<p class="subtitle is-5">Visualisations of several sorting algorithms</p>
-						<p>I made this to help students understand the different algorithms and to help me learn to use canvas.</p>
-						</div>
-						<div class="card-footer">
-							<a class="card-footer-item" href="https://github.com/peritract/sorting-visualisations" target="blank">Code</a>
-							<a class="card-footer-item" href="https://peritract.github.io/sorting-visualisations" target="blank">Live Demo</a>
-						</div>
-					</div>
-				</article>
+			<div class="main-content">
+				I am super into NLP at the moment.
 			</div>
-			
-			<div class="tile is-parent is-4">
-				<article class="tile is-child box shadowed has-background-white-ter">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-header-title">Gottfried's Generator</h3>
-						</div>
-						<figure class="image is-4by3">
-							<img src="assets/gottfrieds-generator.jpg" alt="Placeholder image">
-						</figure>
-						<div class="card-content">
-						<p class="subtitle is-5">A desktop application that generates number system worksheets</p> 
-						I built this using VB.NET to save CS teachers time and effort. It has been described as <a href="https://community.computingatschool.org.uk/resources/5514/single" target="blank">"excellent" and "beautifully effective"</a>.
-						</div>
-						<div class="card-footer">
-							<a class="card-footer-item" href="https://github.com/peritract/gottfrieds-generator" target="blank">Code</a>
-						</div>
-					</div>
-				</article>
+			<div class="main-links">
+				<a class="main-link" href="https://github.com/peritract" target="blank"><span class="icon fab fa-github"></span></a>
+				<a class="main-link" href="https://www.linkedin.com/in/daniel-keefe/" target="blank"><span class="icon fab fa-linkedin"></span></a>
+				<a class="main-link" href="https://codepen.io/peritract" target="blank"><span class="icon fab fa-codepen"></span></a>
+				<a class="main-link" href="https://freecodecamp.com/dkeefe" target="blank"><span class="icon fab fa-free-code-camp"></span></a>
+				<a class="main-link" href="https://twitter.com/peritract" target="blank"><span class="icon fab fa-twitter"></span></a>
 			</div>
-		</div>
-		<div class="tile is-ancestor">
-			<div class="tile is-parent is-4">
-				<article class="tile is-child box shadowed has-background-white-ter">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-header-title">Forgotten</h3>
-						</div>
-						<figure class="image is-4by3">
-							<img src="assets/forgotten_screenshot.png" alt="Placeholder image">
-						</figure>
-						<div class="card-content">
-						<p class="subtitle is-5">A retro-styled 2D platformer game</p> 
-						I made this using Phaser 3. I used it to learn how Phaser worked, to get my head round Webpack, and because making games is fun.
-						</div>
-						<div class="card-footer">
-							<a class="card-footer-item" href="https://github.com/Peritract/forgotten" target="blank">Code</a>
-							<a class="card-footer-item" href="https://peritract.github.io/forgotten" target="blank">Live Demo</a>
-						</div>
-					</div>
-				</article>
-			</div>
-			
-			<div class="tile is-parent is-4">
-				<article class="tile is-child box shadowed has-background-white-ter">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-header-title">ASCIIfier</h3>
-						</div>
-						<figure class="image is-4by3">
-							<img src="assets/jaws.png" alt="Placeholder image">
-						</figure>
-						<div class="card-content">
-						<p class="subtitle is-5">A CLI program to convert images into ASCII</p> 
-						I built this using Python because I was interested in ASCII art and unpicking how images are constructed.
-						</div>
-						<div class="card-footer">
-							<a class="card-footer-item" href="https://github.com/Peritract/ASCIIfier" target="blank">Code</a>
-						</div>
-					</div>
-				</article>
-			</div>
-			
-			<div class="tile is-parent is-4">
-				<article class="tile is-child box shadowed has-background-white-ter">
-					<div class="card">
-						<div class="card-header">
-							<h3 class="card-header-title">Chatroom</h3>
-						</div>
-						<figure class="image is-4by3">
-							<img src="assets/chatroom.png" alt="Placeholder image">
-						</figure>
-						<div class="card-content">
-						<p class="subtitle is-5">A markdown-enabled chatroom</p> 
-						I made this using Socket.io and React, in order to build my experience with React and learn how real-time communication works on the web.
-						</div>
-						<div class="card-footer">
-							<a class="card-footer-item" href="https://github.com/Peritract/chatroom" target="blank">Code</a>
-							<a class="card-footer-item" href="https://babel-towering.glitch.me" target="blank">Live Demo</a>
-						</div>
-					</div>
-				</article>
-			</div>
-			
-		</div>
-	</section>
-	<footer class="footer has-background-grey-dark">
-		<div class="level">
-		<div class="level-left">
-		<a class="icon_button button is-large is-inverted" href="https://github.com/peritract" target="blank"><span class="icon fab fa-github"></span></a>
-		<a class="icon_button button is-large is-inverted" href="https://www.linkedin.com/in/daniel-keefe/" target="blank"><span class="icon fab fa-linkedin"></span></a>
-		<a class="icon_button button is-large is-inverted" href="https://codepen.io/peritract" target="blank"><span class="icon fab fa-codepen"></span></a>
-		<a class="icon_button button is-large is-inverted" href="https://freecodecamp.com/dkeefe" target="blank"><span class="icon fab fa-free-code-camp"></span></a>
-		<a class="icon_button button is-large is-inverted" href="https://twitter.com/peritract" target="blank"><span class="icon fab fa-twitter"></span></a>
-		</div>
-		<div class="level-right">
-		<a href="https://bulma.io">
-			<img src="assets/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-		</a>
-		</div>
-	</footer>
-</body>
+		</section>
+		<footer>
+			I contain content
+		</footer>
+	</body>
 </html>
