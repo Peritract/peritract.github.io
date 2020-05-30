@@ -13,7 +13,7 @@
 
 /* Stop visited links having a special colour */
 
-a:visited {
+a:visited, a:link, a:active {
 	color: var(--text);
 }
 
