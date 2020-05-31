@@ -103,19 +103,19 @@ nav div {
 	margin: 0.6rem;
 	font-size: 1.3rem;
 	cursor: pointer;
-	transition: color 1s ease-out, transform 1s;
+	transition: color 1s ease-out, transform .1s;
 }
 
 .tab-control:hover {
 	transform: scale(1.2);
-	transition: color 2s ease-out, transform 1s;
+	transition: color 2s ease-out, transform .2s;
 }
 
 /* Colour active tab control */
 
 .control-active {
 	color: var(--accent);
-	transition: color 2s ease-out, transform 1s;
+	transition: color 2s ease-out, transform .1s;
 }
 
 /* Put the header image in a circle */
