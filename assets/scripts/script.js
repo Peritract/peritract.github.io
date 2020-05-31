@@ -1,3 +1,14 @@
+// If we can, hide all sections except main
+
+let tabs = document.querySelectorAll(".content-tab");
+
+tabs.forEach(tab => tab.classList.add("tab-hidden"));
+
+document.querySelector("#home").classList.remove("tab-hidden");
+document.querySelector("#home-control").classList.add("control-active");
+
+// If we can't, they have JS disabled
+
 // Check for previously stored user preferences
 
 let theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
