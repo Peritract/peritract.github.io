@@ -27,9 +27,9 @@ document.querySelector(".theme-toggle").addEventListener("click", function (e) {
 // Display each section if the relevant button is clicked
 
 let controls = document.querySelectorAll(".tab-control");
-
+console.log(controls);
 controls.forEach(control => control.addEventListener("click", function(e) {
-
+	console.log(e.target);
 	// Hide all tabs
 
 	tabs = document.querySelectorAll(".content-tab");
