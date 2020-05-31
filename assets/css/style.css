@@ -11,9 +11,16 @@
 	--text: #333333;
 }
 
-/* Stop visited links having a special colour */
+/* Style links in text */
 
-a:visited, a:link, a:active {
+a:visited, a:link, a:active, a {
+	text-decoration: None;
+	color: var(--accent);
+}
+
+/* Stop visited icons/tabs having a special colour */
+
+.quiet-link:visited, .quiet-link:link, .quiet-link:active, .quiet-link {
 	color: var(--text);
 }
 
@@ -31,6 +38,8 @@ body, html {
 
 	background: var(--background);
 	color: var(--text);
+
+	font-family: 'Inconsolata', monospace;
 }
 
 /* All sections take up full width, and will not shrink too far vertically */
@@ -45,6 +54,8 @@ nav, section, footer {
 section {
 	flex-direction: column;
 	flex-grow: 1;
+
+	max-width: 80%;
 	
 	display: flex;
 	align-items: center;
@@ -52,6 +63,11 @@ section {
 	background: var(--background);
 	color: var(--text);
 	justify-content: center;
+}
+
+section p {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
 }
 
 /* Arrange the navbar */
@@ -92,7 +108,7 @@ nav div {
 
 .tab-control:hover {
 	transform: scale(1.2);
-	transition: transform 1s;
+	transition: color 2s ease-out, transform 1s;
 }
 
 /* Colour active tab control */
@@ -142,3 +158,8 @@ i:hover {
 	transition: color 2s ease-out, border 2s ease-out;
 }
 
+/* Font for headings */
+
+h1, h2, h3 {
+	font-family: 'Karla', sans-serif;
+}
