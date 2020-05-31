@@ -40,7 +40,7 @@ document.querySelector(".theme-toggle").addEventListener("click", function (e) {
 let controls = document.querySelectorAll(".tab-control");
 
 controls.forEach(control => control.addEventListener("click", function(e) {
-
+	
 	// Hide all tabs
 
 	tabs = document.querySelectorAll(".content-tab");
