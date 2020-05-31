@@ -175,3 +175,27 @@ i:hover {
 h1, h2, h3 {
 	font-family: 'Karla', sans-serif;
 }
+
+/* Styling for articles */
+
+.articles, .projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.article, .project {
+	margin: 0.2rem 0 0.2rem 0;
+}
+
+/* Styling for projects */
+
+.project-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+
+.project-links a h3 {
+	margin: 0 0.4rem 0 0;
+}
