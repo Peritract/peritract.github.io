@@ -1,14 +1,15 @@
 /* Change whole page themes with dark mode */
 
 :root {
-	--background: #222222;
+	--background: #121212;
 	--text: #FEFEFE;
-	--accent: #66023C;
+	--accent: #C29AB1;
 }
 
 [data-theme="light"] {
 	--background: #FEFEFE;
-	--text: #333333;
+	--text: #121212;
+	--accent: #66023C;
 }
 
 /* Style links in text */
