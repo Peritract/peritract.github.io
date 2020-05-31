@@ -27,7 +27,7 @@ body, html {
 	flex-direction: column;
 	align-items: center;
 
-	line-height: 1.5rem;
+	line-height: 1.6rem;
 
 	background: var(--background);
 	color: var(--text);
@@ -54,11 +54,52 @@ section {
 	justify-content: center;
 }
 
-/* Float the theme button right */
+/* Arrange the navbar */
 
 nav {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
+}
+
+nav div {
+	flex-shrink: 0;
+}
+
+/* The tab controls occupy all spare horizontal space */
+
+.tab-controls {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+}
+
+/* Hide inactive tabs */
+
+.tab-hidden {
+	display: None;
+}
+
+/* Style tab controls */
+
+.tab-control {
+	margin: 0.6rem;
+	font-size: 1.3rem;
+	cursor: pointer;
+	transition: color 1s ease-out, transform 1s;
+}
+
+.tab-control:hover {
+	transform: scale(1.2);
+	transition: transform 1s;
+}
+
+/* Colour active tab control */
+
+.control-active {
+	color: var(--accent);
+	transition: color 2s ease-out, transform 1s;
 }
 
 /* Put the header image in a circle */
@@ -100,3 +141,4 @@ i:hover {
 	border: 0.2rem solid var(--accent);
 	transition: color 2s ease-out, border 2s ease-out;
 }
+

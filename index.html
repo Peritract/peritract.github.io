@@ -20,9 +20,13 @@
 	</head>
 	<body>
 		<nav>
-			<div class="theme-toggle tooltip-left" data-tooltip="Switch to light mode"><i class="fas fa-moon"></i></div>
+			<div class="tab-controls">
+				<a class="tab-control control-active" data-target="home">Home</a>
+				<a class="tab-control" data-target="about">About</a>
+			</div>
+			<div class="theme-toggle" data-tooltip="Switch to light mode"><i class="fas fa-moon"></i></div>
 		</nav>
-		<section>
+		<section id="home" class="content-tab">
 			<div class="header-content">
 				<img src="assets/images/octo.png" class="header-img">
 				<h1 class="header-name">Dan Keefe</h1>
@@ -32,6 +36,9 @@
 					<a href="https://twitter.com/peritract" target="blank"><i class="fab fa-2x fa-twitter"></i></a>
 					<a href="https://www.linkedin.com/in/daniel-keefe/" target="blank"><i class="fab fa-2x fa-linkedin"></i></a></div>
 				</div>
+		</section>
+		<section id="about" class="content-tab tab-hidden">
+			<p>I'm a programmer who likes words.</p>
 		</section>
 		<footer>
 		</footer>
