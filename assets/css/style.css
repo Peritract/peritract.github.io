@@ -30,6 +30,7 @@ a:visited, a:link, a:active, a {
 body, html {
 	width: 100%;
 	height: 100%;
+	margin: 0;
 	
 	display: flex;
 	flex-direction: column;
@@ -37,15 +38,14 @@ body, html {
 
 	line-height: 1.6rem;
 
-	background: var(--background);
 	color: var(--text);
-
+	background: var(--background);
 	font-family: 'Inconsolata', monospace;
 }
 
 /* All sections take up full width, and will not shrink too far vertically */
 
-nav, section, footer {
+nav, section {
 	width: 100%;
 	flex-shrink: 0;
 }
@@ -64,6 +64,8 @@ section {
 	background: var(--background);
 	color: var(--text);
 	justify-content: center;
+
+	overflow-y: scroll;
 }
 
 section p {
@@ -133,6 +135,12 @@ nav div {
 .header-img:hover {
 	border: 0.3rem solid var(--accent);
 	transition: border 2s ease-out;
+
+	user-select: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
 }
 
 /* Center text in header*/
@@ -151,6 +159,12 @@ i {
 	border-radius: 50%;
 	padding: 0.4rem;
 	margin: 0.4rem;
+
+	user-select: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
 }
 
 i:hover {
