@@ -133,6 +133,12 @@ nav div {
 .header-img:hover {
 	border: 0.3rem solid var(--accent);
 	transition: border 2s ease-out;
+
+	user-select: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
 }
 
 /* Center text in header*/
@@ -151,6 +157,12 @@ i {
 	border-radius: 50%;
 	padding: 0.4rem;
 	margin: 0.4rem;
+
+	user-select: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
 }
 
 i:hover {
