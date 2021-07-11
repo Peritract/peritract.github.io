@@ -1,0 +1,24 @@
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: python
+
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled:     true
+  collections: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+      author: "Dan Keefe"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
