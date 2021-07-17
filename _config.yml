@@ -18,6 +18,7 @@ defaults:
     values:
       layout: "article"
       author: "Dan Keefe"
+      permalink: none
   - scope:
       path: ""
     values:

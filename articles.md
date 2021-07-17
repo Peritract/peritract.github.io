@@ -1,14 +1,13 @@
 ---
 title: articles
-layout: default
+permalink: :basename
 ---
-
-<h1>Latest Posts</h1>
 
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ post.url }}">{{ post.title | capitalize }}</a></h2>
+      <p>{{post.date | date_to_string}} - {{post.author}}</p>
       {{ post.excerpt }}
     </li>
   {% endfor %}
