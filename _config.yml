@@ -4,3 +4,5 @@ defaults:
     values:
       layout: "default"
       permalink: :basename
+
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]
