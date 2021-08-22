@@ -7,7 +7,7 @@
 [data-theme="light"] {
     --background: #FFFFFF;
     --text: #1A1A1A;
-    --accent: #662266;
+    --accent: #CB7DFB;
 }
 
 body, html {
@@ -26,7 +26,7 @@ article {
     flex-grow: 1;
     flex-shrink: 0;
 
-    width: 80%;
+    width: 70%;
 
     display: flex;
     flex-direction: column;
@@ -38,15 +38,33 @@ article {
     font-size: 1.4rem;
 }
 
+.text-article {
+    align-items: start;
+}
+
+.text-article > p {
+    margin-top: 0;
+}
+
+.text-article > ol {
+    margin: 0;
+}
+
+.text-article > blockquote {
+    border-left: 0.2rem solid var(--accent);
+    padding-left: 0.5rem;
+}
+
 nav {
     width: 100%;
 	display: flex;
 	flex-direction: row;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
     font-family: 'Karla', sans-serif;
     text-align: center;
+    margin-bottom: 1.2rem;
 }
 
 .subtitle {
@@ -99,4 +117,21 @@ i:hover {
     color: var(--accent);
 	border: 0.1rem solid var(--accent);
 	transition: color 2s ease-out, border 2s ease-out;
+}
+
+hr {
+    color: var(--accent);
+    width: 80%;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.highlighter-rouge, .highlight {
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+pre {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
 }
