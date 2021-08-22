@@ -7,7 +7,7 @@
 [data-theme="light"] {
     --background: #FFFFFF;
     --text: #1A1A1A;
-    --accent: #CB7DFB;
+    --accent: #AB31F7;
 }
 
 body, html {
@@ -67,6 +67,14 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 1.2rem;
 }
 
+.text-article > h1, .text-article > h2, .text-article > h3, .text-article > h4 {
+    text-align: left;
+}
+
+.left-title {
+    text-align: left;
+}
+
 .subtitle {
     margin-top: 0;
 }
@@ -89,16 +97,20 @@ nav > a[href] {
     color: var(--accent) !important;
 }
 
-img {
+.header-image {
     border-radius: 50%;
     max-width: 10rem;
     border: 0.3rem solid var(--text);
     transition: border 1s ease-out;
 }
 
-img:hover {
+.header-image:hover {
     border: 0.3rem solid var(--accent);
 	transition: border 2s ease-out;
+}
+
+img {
+    max-width: 100%;
 }
 
 i {

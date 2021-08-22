@@ -1,5 +1,6 @@
 ---
 title: Harry Potter and the accessing of APIs
+excerpt: APIs are everywhere. In this tutorial, learn how to access them with Python.
 ---
 
 APIs are everywhere. They're a core element of modern software/services, and an incredibly powerful tool for developers. Learning how to use and access APIs unlocks an incredible number of possibilities with code.

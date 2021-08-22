@@ -1,14 +1,11 @@
 ---
 title: articles
 ---
-<article>
-<ul>
+<article class="text-article">
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.date  | date_to_string}}</p>
+      <a href="{{ post.url }}"><h2 class="left-title">{{ post.title }}</h2></a>
+      <h5 class="subtitle"><em>{{ post.date  | date_to_string}}</em></h5>
       {{ post.excerpt }}
-    </li>
+      <hr />
   {% endfor %}
-</ul>
 </article>
