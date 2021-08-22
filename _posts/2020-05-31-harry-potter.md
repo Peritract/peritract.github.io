@@ -186,7 +186,9 @@ print(url)
 
 If you attempt to visit the URL at the moment though, you'll get this response:
 
-`"error": "Must pass API key for request"`
+```
+"error": "Must pass API key for request"
+```
 
 We need to add the API key onto the request in order to authenticate it. However, it's not as simple as just sticking it onto the end - the API will think it's part of the actual URL and we'll end up requesting data from an endpoint that doesn't exist. Instead, we need to add it as a **parameter**.
 
