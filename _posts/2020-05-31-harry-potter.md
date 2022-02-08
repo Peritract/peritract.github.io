@@ -7,7 +7,7 @@ APIs are everywhere. They're a core element of modern software/services, and an 
 
 This post explains what an API is and how to connect to one using Python, aiming to give an accessible introduction to a topic that can be bewildering to explore. It's designed for people who already have some experience with Python and are now looking to expand their skillset. Both for my own amusement, and because it's helpful to have an example to make concepts concrete, the post is structured around the [Harry Potter API](https://www.potterapi.com/).
 
-<div class="alert alert-info>
+<div class="alert alert-info">
 <p>❗In the time since I wrote this tutorial, the Harry Potter API has been deactivated, a casualty of ongoing controversy. This means that the code examples will no longer run, but I'm leaving the article itself up in the hope that the explanations themselves are still of benefit to someone.</p>
 </div>
 
