@@ -14,6 +14,7 @@ My aims for this project were to answer two initial questions:
 1. What are the most popular words in book descriptions?
 2. Does TF-IDF effectively distinguish between different books?
 
+
 In addition, and primarily, I wanted to build a recommendation system that could make reasonable predictions based on short descriptions alone.
 
 ## Motivation
@@ -29,7 +30,8 @@ I was motivated to complete this project by three factors, listed in ascending o
 TF-IDF stands for “term frequency-inverse document frequency”. In short, it’s a way of measuring, for a given word in a given document, how important that word is to that document. Unlike many other measures of word importance, TF-IDF controls for the simple, functional words (such as “the”, or “and”) that are extremely frequent in all texts, but do not carry much meaning themselves.
 
 If you just rely on the simplest metric for word importance — raw frequency of a word — then the word “a” is one of the most important in almost every document. However, using TF-IDF, only words that are common in that document, but rare generally, are seen as important.
-Using TF-IDF to find similar documents
+
+### Using TF-IDF to find similar documents
 
 If you have a set of documents, and a set of words, you can calculate the TF-IDF score for each word for each document. The list of scores for a given document is a TF-IDF “vector”, which can be understood (colloquially, roughly, but usefully) as a location in an imaginary hyper-dimensional space.
 
@@ -38,7 +40,8 @@ By finding documents with TF-IDF vectors that are similar — locations in imagi
 ## Data source
 
 The data for this project was sourced from [Kaggle](https://kaggle.com/): a dataset of [popular books on Goodreads](https://www.kaggle.com/meetnaren/goodreads-best-books). The dataset has around 50,000 rows, and for each book records (amongst other information) the title, author, and description.
-Code
+
+## Code
 
 All the code written as part of this project can be found [on GitHub](https://github.com/Peritract/data-projects/tree/master/tfidf-book-recommender).
 
@@ -47,7 +50,8 @@ All the code written as part of this project can be found [on GitHub](https://gi
 The data needed a lot of cleaning before it was in a fit state for analysis. The dataset contained many effectively duplicate rows, where books differed only in edition number, misprinted title, or in the language of the description. After cleaning the data extensively, I was left with just over 37,000 separate books, with 17,000 unique authors. Only books with unique, English descriptions were preserved.
 
 There were further problems as well — book descriptions on [Goodreads](https://www.goodreads.com/) are often user-entered and contain errors or simply aren’t that descriptive. With this dataset, there wasn’t really a way around that other than manually cleaning and checking all 37,000 descriptions, which I declined to do; these issues must be borne in mind when thinking about the generalisability of any results.
-Data analysis
+
+## Data analysis
 
 The first step was to process the descriptions into a simple and consistent form. To this end, I converted all descriptions to lowercase, before lemmatising each word in each description, and filtering out common “[stop words](https://en.wikipedia.org/wiki/Stop_words)” — words that appear frequently in any document, such as “and”, but that do not have much relevance to the actual topic of the document.
 
