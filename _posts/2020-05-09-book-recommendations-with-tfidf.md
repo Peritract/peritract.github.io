@@ -12,8 +12,8 @@ In order to combine both my interest in literature with my desire to put TF-IDF 
 My aims for this project were to answer two initial questions:
 
 1. What are the most popular words in book descriptions?
-2. Does TF-IDF effectively distinguish between different books?
 
+3. Does TF-IDF effectively distinguish between different books?
 
 In addition, and primarily, I wanted to build a recommendation system that could make reasonable predictions based on short descriptions alone.
 
