@@ -1,0 +1,22 @@
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: python
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+      permalink: /:year/:month/:day/:title/
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: :basename
+
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]

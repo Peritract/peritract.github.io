@@ -1,31 +1,14 @@
-/* Change whole page themes with dark mode */
-
 :root {
-	--background: #121212;
-	--text: #FEFEFE;
+	--background: #1A1A1A;
+	--text: #FFFFFF;
 	--accent: #CB7DFB;
 }
 
 [data-theme="light"] {
-	--background: #FEFEFE;
-	--text: #121212;
-	--accent: #66023C;
+    --background: #FFFFFF;
+    --text: #1A1A1A;
+    --accent: #AB31F7;
 }
-
-/* Style links in text */
-
-a:visited, a:link, a:active, a {
-	text-decoration: None;
-	color: var(--accent);
-}
-
-/* Stop visited icons/tabs having a special colour */
-
-.quiet-link:visited, .quiet-link:link, .quiet-link:active, .quiet-link {
-	color: var(--text);
-}
-
-/* Main page rules */
 
 body, html {
 	width: 100%;
@@ -35,170 +18,151 @@ body, html {
 	flex-direction: column;
 	align-items: center;
 
-	line-height: 1.6rem;
+    background-color: var(--background);
+    color: var(--text);
+}
 
-	color: var(--text);
-	background: var(--background);
+article {
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 1.6rem;
 	font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
 }
 
-/* All sections take up full width, and will not shrink too far vertically */
-
-nav, section {
-	width: 100%;
-	flex-shrink: 0;
+.text-article {
+    align-items: start;
 }
 
-/* The main section grows vertically to fill spare space */
-
-section {
-	flex-direction: column;
-	flex-grow: 1;
-
-	max-width: 80%;
-	
-	display: flex;
-	align-items: center;
-
-	background: var(--background);
-	color: var(--text);
-	justify-content: center;
+.text-article > p {
+    margin-top: 0;
 }
 
-section p {
-	font-size: 1.4rem;
-	line-height: 1.6rem;
+.text-article > ol {
+    margin: 0;
 }
 
-/* Arrange the navbar */
+.text-article > blockquote {
+    border-left: 0.2rem solid var(--accent);
+    padding-left: 0.5rem;
+}
 
 nav {
+    width: 100%;
 	display: flex;
 	flex-direction: row;
 }
 
-nav div {
-	flex-shrink: 0;
+h1, h2, h3, h4, h5 {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin-bottom: 1.2rem;
 }
 
-/* The tab controls occupy all spare horizontal space */
-
-.tab-controls {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	
+.text-article > h1, .text-article > h2, .text-article > h3, .text-article > h4 {
+    text-align: left;
 }
 
-/* Hide inactive tabs */
-
-.tab-hidden {
-	display: None;
+.left-title {
+    text-align: left;
 }
 
-/* Style tab controls */
-
-.tab-control {
-	margin: 0.6rem;
-	font-size: 1.3rem;
-	cursor: pointer;
-	transition: color 1s ease-out, transform .1s;
+.subtitle {
+    margin-top: 0;
 }
 
-.tab-control:hover {
-	transform: scale(1.2);
-	transition: color 2s ease-out, transform .2s;
+a[href] {
+    cursor: pointer;
+    line-height: 1.6rem;
+	font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+    color: var(--accent);
+    text-decoration: none;
 }
 
-/* Colour active tab control */
-
-.control-active {
-	color: var(--accent);
-	transition: color 2s ease-out, transform .1s;
+nav > a[href] {
+    margin: 0.6rem;
+    color: var(--text);
 }
 
-/* Put the header image in a circle */
-
-.header-img {
-	border-radius: 50%;
-	width: 10rem;
-	border: 0.3rem solid var(--text);
-	transition: border 1s ease-out;
+.current-page {
+    color: var(--accent) !important;
 }
 
-/* Make the header image border colour on mouseover */
+.header-image {
+    border-radius: 50%;
+    max-width: 10rem;
+    border: 0.3rem solid var(--text);
+    transition: border 1s ease-out;
+}
 
-.header-img:hover {
-	border: 0.3rem solid var(--accent);
+.header-image:hover {
+    border: 0.3rem solid var(--accent);
 	transition: border 2s ease-out;
-
-	user-select: none;
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none;
 }
 
-/* Center text in header*/
-
-.header-content {
-	text-align: center;
+img {
+    max-width: 100%;
 }
-
-/* Icons colour on hover */
 
 i {
-	cursor: pointer;
-	transition: color 1s ease-out, border 1s ease-out;
-	background: var(--background);
-	border: 0.2rem solid var(--text);
-	border-radius: 50%;
-	padding: 0.4rem;
-	margin: 0.4rem;
-
-	user-select: none;
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none;
+    color: var(--text);
+    cursor: pointer;
+    margin: 0.6rem;
+    margin-left: auto;
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    border: 0.1rem solid var(--text);
+    transition: color 1s ease-out, border 1s ease-out;
 }
 
 i:hover {
-	color: var(--accent);
-	border: 0.2rem solid var(--accent);
+    color: var(--accent);
+	border: 0.1rem solid var(--accent);
 	transition: color 2s ease-out, border 2s ease-out;
 }
 
-/* Font for headings */
-
-h1, h2, h3 {
-	font-family: 'Karla', sans-serif;
+hr {
+    color: var(--accent);
+    width: 80%;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
-/* Styling for articles */
-
-.articles, .projects {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
+.highlighter-rouge, .highlight {
+    width: 100%;
+    border-radius: 0.3rem;
 }
 
-.article, .project {
-	margin: 0.4rem 0 0.4rem 0;
-	border: 0.2rem solid var(--text);
-	border-radius: 0.4rem;
-	padding: 0.2rem;
+pre {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    overflow: auto;
 }
 
-/* Styling for projects */
+@media screen and (max-width: 600px) {
+    article {
+        width: 95%;
+    }
 
-.project-links {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-}
+    pre {
+        font-size: 1rem;
+    }
 
-.project-links a h3 {
-	margin: 0 0.4rem 0 0;
+    .text-article > blockquote {
+        margin-left: 0;
+    }
+
+    h1, h2, h3 {
+        line-height: 3rem;
+    }
 }
