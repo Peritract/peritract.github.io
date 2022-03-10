@@ -22,7 +22,8 @@ folium.Map(location=[51.0260617, -1.3993741], zoom_start=17)
 ![IBM Hursley, shown using a Folium map](/assets/images/ibm_hursley_folium.png)
 
 Where Folium really shines is when you want to overlay information onto maps: to add markers or even [choropleths](https://en.wikipedia.org/wiki/Choropleth_map). To practice and demonstrate this, I’ve been building interactive maps of London.
-Purpose
+
+## Purpose
 
 As noted above, the major reasons I’ve been experimenting with Folium are because it’s part of a course, and because I think it’s interesting. However, I do have a more practical rationale as well.
 
